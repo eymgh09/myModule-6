@@ -1,0 +1,320 @@
+/* Desktop/ general styles */
+body{
+  background-image:
+  url(Images/images/Screenshot\ 2022-12-05\ at\ 7.49.32\ PM.png);
+  width: 100%;
+  font-size: 20px;
+}
+/* tablet/display styles */
+@media (max-width: 1023px){
+  body{
+    font: size 15px;
+}
+}
+
+/* movile/display styles */
+@media (max-width: 560px){
+body{
+  font-size: 12px;
+}
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* navbar styles */
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+  display: none;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+/* navbar elemnts styles */
+.navbar {
+  box-shadow: 0px 5px 10px 0px #aaa;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  color: #000;
+  opacity: 0.85;
+  z-index: 100;
+}
+/* navbar  container styles */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+
+.menu-items {
+  order: 2;
+  display: flex;
+}
+.logo {
+  order: 1;
+  font-size: 2.3rem;
+}
+/* navbar list styles */
+.menu-items li {
+  list-style: none;
+  margin-left: 1.5rem;
+  font-size: 1.3rem;
+}
+/* navbar individual elements styles */
+.navbar a {
+  color: #444;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  color: #ce7d03;
+}
+/* interactive media styles */
+@media (max-width: 768px) {
+  .navbar {
+    opacity: 0.95;
+  }
+
+  .navbar-container input[type="checkbox"],
+  .navbar-container .hamburger-lines {
+    display: block;
+  }
+
+  .navbar-container {
+    display: block;
+    position: relative;
+    height: 64px;
+  }
+/* navbar container imput styles */
+  .navbar-container input[type="checkbox"] {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 30px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+/* navbar humburger styles */
+  .navbar-container .hamburger-lines {
+    display: block;
+    height: 28px;
+    width: 25px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+/* humburger structure styles */
+  .navbar-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: rgb(64, 65, 107);
+  }
+
+  .navbar-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .navbar-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+/* navbar  menu item styles */
+  .navbar .menu-items {
+    padding-top: 100px;
+    background: #fff;
+    height: 100vh;
+    max-width: 200px;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left: 40px;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 5px 0px 10px 0px #aaa;
+    overflow: scroll;
+  }
+/* navbar  menu item list */
+  .navbar .menu-items li {
+    margin-bottom: 1.8rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+/* logo styles */
+  .logo {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    font-size: 1.5rem;
+    margin-top: -20px;
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(0);
+  }/* hamberger lines */
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(45deg);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-45deg);
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar-container input[type="checkbox"]:checked ~ .logo {
+    display: none;
+  }
+  
+}
+
+img{
+    margin-left: 40px;
+    margin-top: 80px;
+    border-radius: 15px;
+    border: 2px solid white;
+}
+a.prev{
+  color:white;
+  margin-left: 50px;
+}
+a.next{
+  color:white;
+  margin-left: 30px;
+}
+/* paragraph styles */
+p{
+    color:#233450;
+    text-align: justify;
+    font-size: 20PX;
+    margin-left: 40px;
+    margin-top: 40px;
+    width: 410px;
+    margin-right: -60PX;
+}
+
+H1{
+  font-size: 20PX;
+}
+h1.logo{
+  color:#233450;
+}
+h2{
+  color:#705542;
+  text-align: center;
+  margin-top: -330px;
+  margin-bottom: 20px;
+  
+}
+h3{
+  color: white;
+  text-align: center;
+  margin-top: 300px;
+  margin-bottom: -80px;
+  
+}
+h6{
+  color:white;
+  text-align: center;
+}
+/* social media footer/styles */
+
+.fa {
+  padding: 15px;
+text-align: center;
+  margin: 5px 3px ;
+  font-size: 20px;
+  width: 50px;
+  color: #1a3eef;
+  margin-left: 20px;
+
+  
+}
+/* facebook button styles*/
+.fa-facebook {
+  background: white;
+  color: royalblue;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 10px;
+}
+/* instagram button styles */
+.fa-instagram {
+  background: white;
+  color: royalblue;
+text-align: left;
+width: 50px;
+height: 50px;
+font-size: 30px;
+border-radius: 10px;
+text-align: left;
+}
+/* youtube button styles */
+.fa-youtube {
+  background: white;
+  color:royalblue;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 10px;
+}
+.fa:hover {
+    opacity: 0.9;
+    text-align: center;
+}
+footer{
+  
+  font-size: 20px;
+  text-align: center;
+}
+/* event box on contact page */
+.box{
+  background-color: #fc2833;
+  color: wheat;
+  width: 280px;
+  font-size: 20px;
+  padding: 10px;
+  margin-left: 300px;
+  text-align: center;
+  border-radius: 20px;
+}
+/* button on cusco page styles */
+button {
+  padding: 5px;
+  width: 60px;
+  color: peru;
+  border-radius: 20px;
+}
